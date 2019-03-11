@@ -9,8 +9,6 @@
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "test": "jest",
-    "lint": "eslint app/**/*",
-    "prepush": "npm run lint"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -32,13 +30,8 @@
     "victory-native": "0.15.0"
   },
   "devDependencies": {
-    "babel-eslint": "8.2.2",
     "babel-jest": "19.0.0",
     "babel-preset-react-native": "1.9.1",
-    "eslint-config-akveo-react": "1.0.0",
-    "eslint-plugin-import": "2.11.0",
-    "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-react": "^7.7.0",
     "husky": "0.14.3",
     "jest-expo": "28.0.0",
     "react-native-scripts": "1.14.0",
