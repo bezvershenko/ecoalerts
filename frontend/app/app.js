@@ -12,7 +12,6 @@ import { withRkTheme } from 'react-native-ui-kitten';
 import { AppRoutes } from './config/navigation/routesBuilder';
 import * as Screens from './screens';
 import { bootstrap } from './config/bootstrap';
-import track from './config/analytics';
 import { data } from './data';
 
 bootstrap();
@@ -53,9 +52,6 @@ export default class App extends React.Component {
             current: this.getCurrentRouteName(current),
             previous: this.getCurrentRouteName(previous),
         };
-        if (screen.previous !== screen.current) {
-            track(screen.current);
-        }
     };
 
     getCurrentRouteName = (navigation) => {
